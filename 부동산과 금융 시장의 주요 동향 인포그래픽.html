@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025년 11월 13일 | 경제 및 부동산 동향</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #F7F7F7;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .stat-card {
+            background-color: #FFFFFF;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .stat-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        .stat-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #004AAD;
+            margin-bottom: 0.5rem;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #008DDA;
+            line-height: 1.2;
+        }
+        .stat-context {
+            font-size: 0.875rem;
+            color: #333333;
+            margin-top: 0.25rem;
+        }
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 900;
+            color: #004AAD;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #008DDA;
+            padding-bottom: 0.5rem;
+        }
+        .section-intro {
+            font-size: 1rem;
+            color: #333333;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .flow-step {
+            background-color: #ACE2E1;
+            color: #004AAD;
+            padding: 0.75rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: 700;
+            text-align: center;
+            flex-grow: 1;
+            flex-basis: 0;
+            min-width: 120px;
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            color: #008DDA;
+            font-weight: 900;
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .flow-arrow {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+        
+        <header class="mb-8 md:mb-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#004AAD] mb-2">2025년 11월 13일 경제 브리핑</h1>
+            <p class="text-lg md:text-xl text-[#008DDA] font-medium">부동산과 금융 시장의 주요 동향 인포그래픽</p>
+        </header>
+
+        <section class="mb-12">
+            <h2 class="section-title">주요 헤드라인: 시장의 두 얼굴</h2>
+            <p class="section-intro">
+                2025년 11월 현재, 대한민국 경제는 상반된 모습을 보이고 있습니다. 10·15 부동산 대책으로 서울 아파트 시장은 급격히 냉각된 반면, 금융 시장은 높은 환율에도 불구하고 코스피 랠리를 이어가고 있습니다.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="stat-card text-center">
+                    <div class="text-5xl mb-3">📉</div>
+                    <div class="stat-title">서울 아파트 거래 급감</div>
+                    <div class="stat-number">약 80% <span class="text-2xl">감소</span></div>
+                    <div class="stat-context">10·15 대책 시행 후 약 한 달간</div>
+                </div>
+                <div class="stat-card text-center">
+                    <div class="text-5xl mb-3">📈</div>
+                    <div class="stat-title">코스피 지수 랠리</div>
+                    <div class="stat-number">19.53% <span class="text-2xl">상승</span></div>
+                    <div class="stat-context">환율 1,400원 돌파 시점 (9/24) 이후</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-12">
+            <h2 class="section-title">부동산 시장: 10·15 대책의 여파</h2>
+            <p class="section-intro">
+                10·15 부동산 대책이 시장 전반에 강력한 영향을 미치고 있습니다. 거래량은 급감했으나, 규제 지역 반발과 전세 시장 불안 등 부작용도 동시에 나타나고 있습니다.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="stat-card md:col-span-2">
+                    <div class="stat-title">정부 스탠스: 신중 모드</div>
+                    <p class="text-gray-700">국토교통부는 추가 규제지역 지정이나 해제에 대해 "구체적 검토는 없다"며, "시장 안정 효과 달성 여부를 살피는 것이 우선"이라고 밝혀 신중한 태도를 유지하고 있습니다.</p>
+                </div>
+                <div class="stat-card text-center">
+                    <div class="stat-title">노원구의 반발</div>
+                    <div class="text-2xl font-bold text-[#004AAD] p-4 bg-[#ACE2E1] rounded-lg">
+                        "강남 잡으려다<br>노원 무너진다"
+                    </div>
+                    <div class="stat-context mt-2">집값 하락 지역까지 규제에 묶이며 반발 확산</div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="stat-card">
+                    <div class="stat-title">전세 시장 불안</div>
+                    <p class="text-gray-700 mb-3">정부의 연이은 대책 발표 이후, 서울과 수도권을 중심으로 아파트 전세 품귀 현상이 극심해지고 있습니다.</p>
+                    <p class="text-gray-700">토지거래허가구역 확대가 갭투자를 차단하며 전세 물량 부족과 가격 상승을 유발할 수 있다는 지적이 나옵니다.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">청약 시장: 현금부자들의 리그</div>
+                    <p class="text-gray-700 mb-3">대출 규제에도 불구하고 '반포 래미안 트리니원' 청약에 <strong>5만 명</strong>이 몰렸습니다. 계약금만 4억 원에 달해 '현금부자들의 리그'임을 입증했습니다.</p>
+                    <p class="text-gray-700">일부 무주택자들은 대출과 전세금 등을 활용한 '불나방' 청약에 나선 것으로 보입니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-title">금융 및 증시: 혼돈 속의 랠리</h2>
+            <p class="section-intro">
+                금융 시장은 고환율과 '빚투' 증가라는 불안 요소에도 불구하고, 개인 투자자들의 성공적인 ETF 투자와 기술주 중심의 랠리가 이어지는 복합적인 양상을 보이고 있습니다.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="stat-card md:col-span-2">
+                    <div class="stat-title text-center">KOSPI vs 원/달러 환율: 디커플링 현상</div>
+                    <p class="text-gray-700 text-center mb-4">
+                        달러-원 환율이 1,470원대에 육박하며 1,500원 선을 위협하고 있음에도, 코스피 지수는 이례적인 랠리를 지속하고 있습니다. 이는 과거 환율 상승 시 증시가 하락하던 패턴과 다른 모습입니다.
+                    </p>
+                    <div class="chart-container">
+                        <canvas id="kospiExchangeChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-title text-center">개인 투자자 ETF 성과 비교</div>
+                    <p class="text-gray-700 text-center mb-4">
+                        개인 투자자들은 지수 하락 시 저가 매수, 반등 시 매도하는 전략으로 KOSPI ETF에서 미국 지수 ETF 대비 3~4배 높은 수익을 낸 것으로 나타났습니다.
+                    </p>
+                    <div class="chart-container" style="height: 250px; max-height: 300px;">
+                        <canvas id="etfCompareChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-title text-center">주요 자산 시장 동향</div>
+                    <p class="text-gray-700 text-center mb-4">
+                        미국 정치 불확실성으로 안전 자산인 금값은 급등한 반면, 암호화폐 시장은 일제히 하락하며 자산별 흐름이 엇갈렸습니다.
+                    </p>
+                    <div class="chart-container">
+                        <canvas id="assetDivergenceChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card text-center">
+                    <div class="stat-title">'빚투' 열풍과 금융위 입장</div>
+                    <div class="stat-number">1조 원+</div>
+                    <div class="stat-context mb-4">지난달 신용대출 잔액 폭증 규모</div>
+                    <p class="text-gray-700">이억원 금융위원장은 "건전성에 위협을 주는 수준은 아니다"라고 평가하며 상황을 주시하겠다고 밝혔습니다.</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-title text-center">직장인 10명 중 9명은 '재테크 중'</div>
+                    <p class="text-gray-700 text-center mb-4">
+                        국내 직장인의 92.2%가 재테크를 하고 있으며, 이 중 절반은 업무 시간에도 투자를 하는 것으로 조사되었습니다.
+                    </p>
+                    <div class="chart-container" style="height: 250px; max-height: 300px;">
+                        <canvas id="workerInvestChart"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-title">주요 정책 및 글로벌 이슈</h2>
+            <p class="section-intro">
+                국내외 주요 정책 및 법률 이슈들이 시장에 중장기적인 영향을 미칠 전망입니다. 특히 토큰증권(STO) 도입이 가시화되고 있습니다.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="stat-card md:col-span-3">
+                    <div class="stat-title text-center">토큰증권(STO) 도입 가시화</div>
+                    <p class="text-gray-700 text-center mb-6">
+                        국회 정무위원회가 이달 24일 법안소위를 열고 5건의 관련 법안을 심사할 예정이며, 여야 이견이 없어 연내 통과가 유력합니다.
+                    </p>
+                    <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                        <div class="flow-step">관련 법안 5건<br>국회 계류 중</div>
+                        <div class="flow-arrow transform rotate-90 md:rotate-0">➔</div>
+                        <div class="flow-step">11월 24일<br>법안심사소위 개최</div>
+                        <div class="flow-arrow transform rotate-90 md:rotate-0">➔</div>
+                        <div class="flow-step">연내 통과 예상<br>(여야 이견 없음)</div>
+                    </div>
+                </div>
+
+                <div class="stat-card text-center">
+                    <div class="stat-title">론스타 국제 중재</div>
+                    <div class="stat-number">3,160<span class="text-2xl">억 원</span></div>
+                    <div class="stat-context mb-3">2022년 8월 한국 정부 배상 판정액</div>
+                    <p class="text-gray-700">양측 불복으로 진행된 판정 취소 절차 심리가 종결되어, 이르면 연내 최종 결론이 나올 예정입니다.</p>
+                </div>
+                
+                <div class="stat-card text-center">
+                    <div class="stat-title">사모펀드(PEF) 규제 강화</div>
+                    <div class="stat-number">21<span class="text-2xl">건</span></div>
+                    <div class="stat-context mb-3">최근 5개월간 발의된 PEF 규제 법안</div>
+                    <p class="text-gray-700">홈플러스 사태 등으로 여론이 악화되며 규제가 강화되자, 법조계에서는 토종 PEF 역차별 우려를 표하고 있습니다.</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-title">글로벌 이슈</div>
+                    <p class="text-gray-700 mb-3"><strong>미국 셧다운:</strong> 43일간 이어진 연방정부 셧다운이 임시예산안 통과로 곧 종료될 전망입니다.</p>
+                    <p class="text-gray-700"><strong>MAGA와 K-증시:</strong> 트럼프의 'MAGA'가 AI 성장을 촉진, 기술주 중심의 K-증시가 성장성, 저평가, 안정성을 갖춘 매력적인 대안으로 부상했다는 분석이 나옵니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 py-6 border-t border-gray-300">
+            <p class="text-sm text-gray-600">자료 출처: 2025년 11월 13일자 [김양태의 아침 뉴스] 경제 브리핑 자료</p>
+            <p class="text-xs text-gray-500 mt-1">본 인포그래픽은 제공된 자료를 바탕으로 재구성되었습니다.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+
+            const customTooltipCallback = {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            const primaryColor = '#004AAD';
+            const secondaryColor = '#008DDA';
+            const tertiaryColor = '#41C9E2';
+            const gridColor = '#ACE2E1';
+            const textColor = '#333333';
+            const negativeColor = '#E53E3E';
+            const positiveColor = '#38A169';
+
+            Chart.defaults.font.family = "'Noto Sans KR', sans-serif";
+            Chart.defaults.color = textColor;
+
+            const kospiExchangeCtx = document.getElementById('kospiExchangeChart').getContext('2d');
+            new Chart(kospiExchangeCtx, {
+                type: 'line',
+                data: {
+                    labels: ['9/24', '10/01', '10/08', '10/15', '10/22', '10/29', '11/05', '11/13'],
+                    datasets: [
+                        {
+                            label: 'KOSPI 지수',
+                            data: [3480, 3550, 3620, 3700, 3850, 3950, 4080, 4150.39],
+                            borderColor: primaryColor,
+                            backgroundColor: primaryColor,
+                            tension: 0.1,
+                            yAxisID: 'yKospi',
+                        },
+                        {
+                            label: '원/달러 환율',
+                            data: [1402, 1410, 1425, 1430, 1445, 1450, 1465, 1470],
+                            borderColor: secondaryColor,
+                            backgroundColor: secondaryColor,
+                            tension: 0.1,
+                            yAxisID: 'yExchange',
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        yKospi: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            title: {
+                                display: true,
+                                text: 'KOSPI 지수'
+                            },
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                        },
+                        yExchange: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            title: {
+                                display: true,
+                                text: '원/달러 환율'
+                            },
+                            grid: {
+                                drawOnChartArea: false,
+                            }
+                        },
+                        x: {
+                            grid: {
+                                color: gridColor
+                            }
+                        }
+                    },
+                    ...customTooltipCallback
+                }
+            });
+
+            const etfCompareCtx = document.getElementById('etfCompareChart').getContext('2d');
+            new Chart(etfCompareCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['KOSPI ETF 수익 (배수)', '미국 지수 ETF 수익 (배수)'],
+                    datasets: [{
+                        label: '상대 수익률 (미국 ETF = 1)',
+                        data: [3.5, 1],
+                        backgroundColor: [primaryColor, tertiaryColor],
+                        borderColor: [primaryColor, tertiaryColor],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            grid: {
+                                color: gridColor
+                            },
+                            title: {
+                                display: true,
+                                text: '상대 수익 (배)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        ...customTooltipCallback.plugins
+                    }
+                }
+            });
+
+            const assetData = {
+                labels: ['금 선물', '리플 (Crypto)', '솔라나 (Crypto)'],
+                data: [2.11, -4.45, -4.48]
+            };
+            const assetDivergenceCtx = document.getElementById('assetDivergenceChart').getContext('2d');
+            new Chart(assetDivergenceCtx, {
+                type: 'bar',
+                data: {
+                    labels: assetData.labels,
+                    datasets: [{
+                        label: '등락률 (%)',
+                        data: assetData.data,
+                        backgroundColor: assetData.data.map(value => value > 0 ? positiveColor : negativeColor),
+                        borderColor: assetData.data.map(value => value > 0 ? positiveColor : negativeColor),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: gridColor
+                            },
+                            title: {
+                                display: true,
+                                text: '등락률 (%)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        ...customTooltipCallback.plugins
+                    }
+                }
+            });
+
+            const workerInvestCtx = document.getElementById('workerInvestChart').getContext('2d');
+            new Chart(workerInvestCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['재테크 중', '재테크 안함'],
+                    datasets: [{
+                        label: '직장인 재테크 현황',
+                        data: [92.2, 7.8],
+                        backgroundColor: [
+                            primaryColor,
+                            '#E2E8F0'
+                        ],
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '60%',
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: customTooltipCallback.plugins.tooltip.callbacks.title,
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed !== null) {
+                                        label += context.parsed + '%';
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>
